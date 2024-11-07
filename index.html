@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link href="style.css" rel ="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <h2>Currency Converter</h2>
+        <form>
+            <div class="amount">
+                <p>Enter amount</p>
+                <input value="1" type="text"/>
+            </div>
+            <div class="dropdown"> <!-- it contains both flags,options -->
+                
+                <div class="from">
+                    <p>From</p>
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/US/flat/64.png" />
+                        <select name="from"><!-- whithout this,<option ></option> won't work  -->
+                            
+                            <!-- <option value="USD">USD</option> -->
+                            <!-- <option value="BDT">BDT</option> -->
+                        </select>
+                    </div>
+                    
+                </div>
+                <div class="to">
+                    <p>To</p>
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/BD/flat/64.png" />
+                        <select name="to"><!-- whithout this,<option ></option> won't work  -->
+                            <!-- <option value="USD">USD</option>
+                            <option value="BDT" selected>BDT</option> -->
+                            
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="msg">
+                1USD = 117 BDT
+            </div>
+            <button>Get Exchange Rate</button>
+        </form>
+    </div>
+    
+    
+    <script src="code.js"></script>
+    <script src="script.js"></script>
+    <!-- that line(script.js) must be insert after code.js ,
+    if we don't do it,then countrylist of code.js will not be available 
+    in script.js  -->
+</body>
+</html>

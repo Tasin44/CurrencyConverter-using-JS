@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;    /* it'll move the item to the middle of the page  */
+    background-color: rgb(56, 56, 172);
+}
+.container{
+    /* Here is two container class,one is only container, one is select-container,
+    only container is present at the starting of the body  
+    This container contains everyting */
+
+    background-color: rgb(117, 68, 27);
+    padding: 2rem;
+    border-radius: 1rem;
+    min-height: 45vh;
+    width: 40vh;
+}
+form{
+    margin: 2rem 0 1rem 0;/* left,up,right,down */
+    
+}
+
+form select,
+button,
+input{
+    width: 100%;/* it'll take the whole from width */
+    border: none;/* removing the default border  */
+    outline: none;
+    border-radius: .75rem;
+    
+}
+
+form input{
+    border: 1px solid rgb(173, 164, 164);
+    background-color: rgb(20, 43, 43);
+    font-size: 1.2rem;
+    height: 3rem;
+    color: white;
+    padding-left: 0.5rem;
+}
+
+.dropdown{
+    display: flex;/* both flags will be appear in the same line  */
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.select-container{/* this container contains only image and option  */
+        display: flex;
+        width: 6rem;
+        justify-content: center;
+        align-items: center ;
+        border-radius: 0.5rem;
+        border: 1px solid gray;
+
+        /* can't access here img take directly,
+        that's why making a separate .select-container img{} */
+        
+}
+
+.select-container img{
+    max-width: 2rem;
+}
+
+.select-container select{
+    font-size: 1rem; /* It'll increase the size of text USD,BDT etc*/
+    width: auto;
+}
+
+.msg{
+    margin: 2rem 0 2rem 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+form button{
+    height: 3rem;
+    background-color: rgb(59, 88, 30);
+    color: white;
+    font-size: 1.15rem;
+    cursor: pointer;
+}
